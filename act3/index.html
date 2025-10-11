@@ -1,333 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ACT III — Creative Studio</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- AOS (Animate on Scroll) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
-  <!-- Font Awesome (icons) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-  <!-- Main CSS (your file) -->
-  <link rel="stylesheet" href="/act3/styles.css">
-  <meta name="description" content="ACT III — Film production & advertising. Studio-quality creative content." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 3 — Where Stories Take Their Final, Most Powerful Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/act3/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">ACT III</a>
-
-      <nav id="site-nav" class="nav-desktop">
-        <ul class="nav-list">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#work" class="nav-link">Our Work</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="#contact" class="nav-chat">Chat with us</a></li>
-        </ul>
-      </nav>
-
-      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- HERO (full-screen cinematic image) -->
-  <section id="hero" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="hero-left" data-aos="fade-right" data-aos-delay="150">
-        <p class="eyebrow">Welcome to ACT III</p>
-        <h1 class="hero-title"><span>ACT III</span> — Creative Studio</h1>
-        <p class="hero-sub">Film Production &amp; Advertising Agency</p>
-
-        <p class="typed-wrap"><span id="typed"></span></p>
-
-        <div class="hero-ctas">
-          <a href="#work" class="btn btn-primary">Featured Work</a>
-          <a href="#contact" class="btn btn-outline">Get in touch</a>
+    <nav class="navbar navbar-expand-lg fixed-top cinematic-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-gold fw-bold ms-3" href="#">ACT 3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white mx-2" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white mx-2" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white mx-2" href="#process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link text-gold mx-2 cta-nav" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <ul class="hero-features" data-aos="fade-up" data-aos-delay="300">
-          <li>Studio-quality production</li>
-          <li>Creative storytelling</li>
-          <li>Client-focused approach</li>
-        </ul>
-      </div>
-
-      <div class="hero-right" data-aos="zoom-in" data-aos-delay="250">
-        <!-- Use the logo-image (centered) — optional -->
-        <div class="hero-logo">
-          <img src="/Untitled design (1).png" alt="ACT III logo" loading="lazy">
+    <header id="hero" class="hero-section text-white d-flex align-items-center justify-content-center">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="path/to/your/hero-video.mp4" type="video/mp4">
+            </video>
+        <div class="hero-content text-center container view-on-scroll fade-in-up">
+            <h1 class="display-1 text-white headline-font mb-4">We Don’t Make Ads. We Build Stories That Hit Like Cinema.</h1>
+            <p class="lead text-light mb-5">A no-nonsense, end-to-end creative studio for brands that want to cut the noise and own the screen.</p>
+            <a href="#contact" class="btn btn-lg cinematic-btn view-on-scroll fade-in-up delay-1">🎬 Book a Free Creative Strategy Call →</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- FEATURED WORK -->
-  <section id="work" class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Featured Work</h2>
-        <p>Explore our creative portfolio</p>
-      </div>
-
-      <div class="grid cards" data-aos="fade-up" data-aos-delay="120">
-        <article class="work-card">
-          <img src="https://picsum.photos/540/320?random=101" alt="Toilet Terror">
-          <div class="card-body">
-            <h3>Toilet Terror</h3>
-            <p>A micro-story that showcases our ability to create impactful content in a short format.</p>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <img src="https://picsum.photos/540/320?random=102" alt="Gabbie">
-          <div class="card-body">
-            <h3>GABBIE</h3>
-            <p>A doll, found in the garbage, gets a new home.</p>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <img src="https://picsum.photos/540/320?random=103" alt="Ghumatacha Modur Talar">
-          <div class="card-body">
-            <h3>Ghumatacha Modur Talar</h3>
-            <p>A documentary exploring Goa's state instrument.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section section-dark">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>What we can do for you</p>
-      </div>
-
-      <div class="grid services-grid" data-aos="fade-up" data-aos-delay="120">
-        <div class="service-item">
-          <i class="fa-solid fa-film service-icon"></i>
-          <h4>Film Production</h4>
-          <p>High-quality film production services for commercials, documentaries, and more.</p>
-          <a href="#contact" class="link-more">Learn More →</a>
+    <section class="tagline-section py-5 bg-dark text-center">
+        <div class="container view-on-scroll fade-in-up">
+            <p class="h3 text-gold tagline-font mb-3">ACT 3 is that moment where chaos sharpens, the world shifts, and something powerful begins.</p>
+            <p class="h4 text-light">We turn bold ideas into content that grabs attention and gets real-world results.</p>
         </div>
+    </section>
 
-        <div class="service-item">
-          <i class="fa-solid fa-bullhorn service-icon"></i>
-          <h4>Advertising</h4>
-          <p>Creative advertising solutions that make your brand stand out.</p>
-          <a href="#contact" class="link-more">Learn More →</a>
+    <section id="about" class="about-section py-6 bg-darker text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-6 text-white view-on-scroll fade-in-up">🔥 About ACT 3</h2>
+            <div class="row align-items-stretch">
+                <div class="col-lg-6 mb-5 mb-lg-0 view-on-scroll fade-in-left">
+                    <div class="about-card p-5 h-100">
+                        <h3 class="text-gold mb-4 subhead-font">Who We Are</h3>
+                        <p class="text-light fs-5">We’re **story architects, emotion engineers, and attention hackers.** Built for a world where attention is scarce and authenticity is everything.</p>
+                        <p class="text-light">ACT 3 isn’t an agency that “makes videos.” We are filmmakers, strategists, and creatives obsessed with impact. We know the grind — shooting in chaos, writing at 3 AM, rewriting until it hurts, and still showing up hungry for more.</p>
+                        <p class="text-gold fw-bold cinematic-quote mt-4">Because we don’t do mediocre. We do memorable.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 view-on-scroll fade-in-right">
+                    <div class="about-card p-5 h-100">
+                        <h3 class="text-gold mb-4 subhead-font">Our Philosophy</h3>
+                        <ul class="list-unstyled philosophy-list">
+                            <li class="mb-4">
+                                <span class="text-gold icon-bullet">✦</span>
+                                <h4 class="d-inline text-white headline-font">Allergic to Mediocrity:</h4>
+                                <p class="text-light ms-4">We spit on the safe. Greatness isn’t a goal — it’s our baseline.</p>
+                            </li>
+                            <li class="mb-4">
+                                <span class="text-gold icon-bullet">✦</span>
+                                <h4 class="d-inline text-white headline-font">Fearless Innovation:</h4>
+                                <p class="text-light ms-4">We don’t follow trends. We weaponize creativity.</p>
+                            </li>
+                            <li class="mb-4">
+                                <span class="text-gold icon-bullet">✦</span>
+                                <h4 class="d-inline text-white headline-font">Passion in Every Frame:</h4>
+                                <p class="text-light ms-4">We love what we do, and it shows in every cut, line, and frame.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="service-item">
-          <i class="fa-solid fa-video service-icon"></i>
-          <h4>Video Content</h4>
-          <p>Engaging video content for social media, websites, and marketing campaigns.</p>
-          <a href="#contact" class="link-more">Learn More →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Latest From Our Blog</h2>
-        <p>Insights, stories & creative inspiration</p>
-      </div>
-
-      <div class="grid blog-grid" data-aos="fade-up" data-aos-delay="120">
-        <article class="blog-card">
-          <small>June 15, 2023 • Film Production</small>
-          <h4>The Art of Storytelling in Commercial Films</h4>
-          <a class="link-more" href="#blog">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <small>May 28, 2023 • Social Media</small>
-          <h4>5 Trends Dominating Social Video in 2023</h4>
-          <a class="link-more" href="#blog">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <small>April 12, 2023 • Behind the Scenes</small>
-          <h4>Making of Our Award-Winning Short Film</h4>
-          <a class="link-more" href="#blog">Read More →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section section-dark">
-    <div class="container about-grid" data-aos="fade-up">
-      <div class="about-text">
-        <h3>About ACT III</h3>
-        <p>ACT III is a full-spectrum creative production studio built for the modern age of storytelling. We don’t just make ads—we craft iconic brand narratives that resonate, engage, and drive results.</p>
-
-        <ul class="about-list">
-          <li>Studio-quality production</li>
-          <li>Creative storytelling</li>
-          <li>Professional team</li>
-        </ul>
-      </div>
-
-      <aside class="founder-card" data-aos="fade-left">
-        <img src="https://picsum.photos/360/360?random=5" alt="Founder">
-        <div class="founder-meta">
-          <strong>Abhishikth Matta</strong>
-          <small>Founder &amp; CEO, ACT III</small>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section cta-section">
-    <div class="container cta-row" data-aos="fade-up">
-      <div>
-        <h3>Ready to start your project?</h3>
-        <p>Perfect for agencies, production houses, and marketing professionals seeking studio-quality results.</p>
-      </div>
-      <div>
-        <a href="#contact" class="btn btn-primary large">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section section-dark contact-section" data-aos="fade-up">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <h4>Contact Us</h4>
-        <p>Email: <a href="mailto:contact@act3.in">contact@act3.in</a></p>
-        <p>Phone: <a href="tel:+918788133949">+91 87881 33949</a></p>
-
-        <div class="testimonial">
-          <strong>"ACT III delivered beyond our expectations."</strong>
-          <p class="muted">— Om Gorantiwar</p>
-        </div>
-      </div>
-
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we will get back to you!');">
-        <div class="mb-2">
-          <label class="form-label">Name</label>
-          <input class="form-control" type="text" required placeholder="Your name">
-        </div>
-        <div class="mb-2">
-          <label class="form-label">Email</label>
-          <input class="form-control" type="email" required placeholder="you@company.com">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Message</label>
-          <textarea class="form-control" rows="4" required placeholder="Brief about the project"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-about">
-        <a class="brand footer-brand" href="#">ACT III</a>
-        <p>High-quality productions for creatives, agencies, and visionaries. Studio-quality results, every time.</p>
-      </div>
-
-      <div class="footer-links">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#work">Our Work</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h5>Contact</h5>
-        <p>Email: <a href="mailto:contact@act3.in">contact@act3.in</a></p>
-        <p>Phone: <a href="tel:+918788133949">+91 87881 33949</a></p>
-        <div class="socials">
-          <a href="#" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </div>
+    </section>
+    
+    <div class="cinematic-banner parallax-effect" style="background-image: url('path/to/cinematic-stills/bts-photo-1.jpg');">
+        <h2 class="text-white banner-text view-on-scroll fade-in-up">"We are Obsessed with Impact."</h2>
     </div>
 
-    <div class="footer-bottom">
-      <small>© 2025 ACT III. All rights reserved.</small>
-    </div>
-  </footer>
+    <section id="services" class="services-section py-6 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-6 text-white view-on-scroll fade-in-up">🎥 Our Services</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6 view-on-scroll fade-in-up">
+                    <div class="service-card primary-service p-5 h-100 position-relative">
+                        <div class="service-icon text-gold">🎬</div>
+                        <h3 class="headline-font text-white mb-2">Ad Film Production</h3>
+                        <p class="text-gold subhead-font mb-4">Script. Shoot. Deliver. Dominate.</p>
+                        <p class="text-light">We don’t just sell your product — **we make people feel it.** From the spark of an idea to the final frame, we craft cinematic ads built to **stop thumbs and turn heads.**</p>
+                        <ul class="list-unstyled detail-list mt-3">
+                            <li><span class="text-gold">✓</span> Scriptwriting & Creative Direction</li>
+                            <li><span class="text-gold">✓</span> Shoot & Post-production (VFX, Sound Design, Grading)</li>
+                            <li><span class="text-gold">✓</span> Multi-format Delivery (YouTube, TV, Insta, OTT, etc.)</li>
+                        </ul>
+                        <p class="text-gold mt-3">💡 Ideal for: Brands ready to make a **bold, cinematic statement.**</p>
+                    </div>
+                </div>
 
-  <!-- JS: Bootstrap, AOS, Typed, then custom -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
+                <div class="col-lg-6 view-on-scroll fade-in-up delay-2">
+                    <div class="service-card p-5 h-100 position-relative">
+                        <div class="service-icon text-gold">💡</div>
+                        <h3 class="headline-font text-white mb-2">Social Media Marketing & Management (SMMA)</h3>
+                        <p class="text-gold subhead-font mb-4">Strategy + Storytelling = Attention that Converts.</p>
+                        <p class="text-light">We blend content strategy with visual storytelling that’s **impossible to scroll past.**</p>
+                        <ul class="list-unstyled detail-list mt-3">
+                            <li><span class="text-gold">✓</span> Content Strategy & Planning</li>
+                            <li><span class="text-gold">✓</span> Creatives & Reels Production</li>
+                            <li><span class="text-gold">✓</span> Paid Ad Campaigns (Meta, YouTube, LinkedIn)</li>
+                            <li><span class="text-gold">✓</span> Analytics & Performance Reporting</li>
+                        </ul>
+                        <p class="text-gold mt-3">💡 Ideal for: Founders, startups, and brands that want **presence and performance.**</p>
+                    </div>
+                </div>
+            </div>
 
-  <script>
-    // Wait until DOM is ready
-    document.addEventListener('DOMContentLoaded', function () {
-      // Mobile nav toggle
-      const hamburger = document.getElementById('hamburger');
-      const nav = document.getElementById('site-nav');
-      hamburger.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        hamburger.classList.toggle('open');
-      });
+            <div class="row g-4 mt-5">
+                <div class="col-md-4 view-on-scroll fade-in-up">
+                    <div class="service-mini-card p-4 h-100">
+                        <h4 class="text-gold subhead-font">3. Documentary Filmmaking</h4>
+                        <p class="text-light">**Real stories. Raw emotions.** We create docs that hit deep and linger longer.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 view-on-scroll fade-in-up delay-3">
+                    <div class="service-mini-card p-4 h-100">
+                        <h4 class="text-gold subhead-font">4. Web Development</h4>
+                        <p class="text-light">A Website That Works as Hard as You Do. Handcrafted, fast, and **SEO-optimized.**</p>
+                    </div>
+                </div>
+                <div class="col-md-4 view-on-scroll fade-in-up delay-4">
+                    <div class="service-mini-card p-4 h-100">
+                        <h4 class="text-gold subhead-font">5. Aerial Cinematography / 6. Event Filming</h4>
+                        <p class="text-light">**Own the Sky. Frame the Impossible.** Every moment deserves a cinematic memory.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 view-on-scroll fade-in-up">
+                <a href="#contact" class="btn btn-lg btn-outline-gold mt-4">See Full Service Details</a>
+            </div>
+        </div>
+    </section>
 
-      // Close mobile nav on link click
-      document.querySelectorAll('.nav-link').forEach(a=>{
-        a.addEventListener('click', ()=> {
-          nav.classList.remove('open');
-          hamburger.classList.remove('open');
+    <section id="process" class="process-section py-6 bg-darker text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-6 text-white view-on-scroll fade-in-up">🚀 Our Process: The Studio-Grade Blueprint</h2>
+            <div class="row process-timeline justify-content-center">
+                
+                <div class="col-md-4 col-lg-2 process-step text-center view-on-scroll fade-in-up">
+                    <div class="step-icon text-gold">1</div>
+                    <h3 class="text-white headline-font">Discover</h3>
+                    <p class="text-light">We get under your brand’s skin — goals, audience, and tone.</p>
+                </div>
+                <div class="col-lg-1 process-arrow d-none d-lg-flex align-items-center justify-content-center view-on-scroll fade-in-right delay-2">→</div>
+                
+                <div class="col-md-4 col-lg-2 process-step text-center view-on-scroll fade-in-up delay-3">
+                    <div class="step-icon text-gold">2</div>
+                    <h3 class="text-white headline-font">Strategize</h3>
+                    <p class="text-light">Build a creative roadmap that aligns art with marketing.</p>
+                </div>
+                <div class="col-lg-1 process-arrow d-none d-lg-flex align-items-center justify-content-center view-on-scroll fade-in-right delay-4">→</div>
+                
+                <div class="col-md-4 col-lg-2 process-step text-center view-on-scroll fade-in-up delay-5">
+                    <div class="step-icon text-gold">3</div>
+                    <h3 class="text-white headline-font">Create</h3>
+                    <p class="text-light">Lights, camera, chaos, and magic.</p>
+                </div>
+                <div class="col-lg-1 process-arrow d-none d-lg-flex align-items-center justify-content-center view-on-scroll fade-in-right delay-6">→</div>
+                
+                <div class="col-md-4 col-lg-2 process-step text-center view-on-scroll fade-in-up delay-7">
+                    <div class="step-icon text-gold">4</div>
+                    <h3 class="text-white headline-font">Deliver & Scale</h3>
+                    <p class="text-light">Studio-grade content, ready for every platform + continuous tracking.</p>
+                </div>
+            </div>
+            
+            <h3 class="text-center text-white mt-5 pt-5 view-on-scroll fade-in-up">The result? **Unforgettable content that boosts brands and moves audiences.**</h3>
+        </div>
+    </section>
+
+    <section class="trust-section py-6 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-6 text-white view-on-scroll fade-in-up">💼 Why Brands Choose ACT 3</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4 view-on-scroll fade-in-up">
+                    <div class="feature-box p-4 h-100">
+                        <div class="text-gold feature-icon">✅</div>
+                        <h4 class="headline-font text-white">Studio-Grade Quality Without Agency Bloat</h4>
+                        <p class="text-light">Premium output, lean operation. Maximum impact, minimal red tape.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 view-on-scroll fade-in-up delay-2">
+                    <div class="feature-box p-4 h-100">
+                        <div class="text-gold feature-icon">✅</div>
+                        <h4 class="headline-font text-white">Cross-Platform Expertise (Film + Marketing + Web)</h4>
+                        <p class="text-light">A full-stack solution from cinema screen to social feed to website backend.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 view-on-scroll fade-in-up delay-3">
+                    <div class="feature-box p-4 h-100">
+                        <div class="text-gold feature-icon">✅</div>
+                        <h4 class="headline-font text-white">Brutal Honesty & Creative Precision</h4>
+                        <p class="text-light">We reject the safe. We deliver work that redefines expectations, every time.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-5 view-on-scroll fade-in-up delay-4">
+                <p class="h4 text-gold cinematic-quote pt-5">The world’s attention span is shorter than ever. The brands that win are the ones that tell stories that feel alive. That’s where we come in.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section py-6 text-white text-center cinematic-banner parallax-effect" style="background-image: url('path/to/cinematic-stills/contact-shot.jpg');">
+        <div class="container view-on-scroll fade-in-up">
+            <h2 class="display-3 text-white headline-font mb-4">You’ve seen enough words. Now, let’s create visuals that speak louder.</h2>
+            <p class="lead text-light mb-5">Ready to scale, improve, gain attention, and get **real-world conversions**?</p>
+            
+            <a href="mailto:act3films@gmail.com" class="btn btn-primary btn-lg cinematic-btn mx-3">Let’s Build Your Story →</a>
+            
+            <div class="contact-details mt-5">
+                <p class="h5 text-gold mb-2">Call/WhatsApp: +91 XXXXX XXXXX | Email: act3films@gmail.com</p>
+                <p class="text-light">Location: Goa | Hyderabad | Available Nationwide</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-darker text-center py-4 text-light">
+        <div class="container">
+            <p class="mb-0 text-gold fw-bold">ACT 3 — Where the old breaks away, and something powerful begins.</p>
+            <p class="text-muted small mt-2">&copy; 2025 ACT 3 Creative Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Custom JavaScript for cinematic scroll effects
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.view-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
         });
-      });
-
-      // Smooth scroll for internal links
-      document.querySelectorAll('a[href^="#"]').forEach(a=>{
-        a.addEventListener('click', function (e) {
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({behavior:'smooth', block:'start'});
-          }
-        });
-      });
-
-      // Init AOS
-      AOS.init({ duration: 750, easing: 'ease-out-cubic', once: true });
-
-      // Typed.js for subtitle (simple tagline rotation)
-      new Typed('#typed', {
-        strings: ['Cinematic ad films', 'High-impact social campaigns', 'Documentary storytelling'],
-        typeSpeed: 45,
-        backSpeed: 25,
-        backDelay: 1800,
-        loop: true
-      });
-    });
-  </script>
+    </script>
 </body>
 </html>
