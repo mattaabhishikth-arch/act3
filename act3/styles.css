@@ -1,9 +1,10 @@
 /* GLOBAL STYLES & TYPOGRAPHY */
 :root {
-    --color-black: #0A0A0A;
-    --color-dark: #121212;
+    /* Updated Color Palette */
+    --color-black: #050505; /* Deep, Matte Black */
+    --color-dark: #101010; /* Darker tone for separation */
     --color-darker: #1A1A1A;
-    --color-gold: #F0C24B; /* Golden Amber Accent */
+    --color-accent: #B21818; /* Matte Red Accent */
     --color-light: #CCCCCC;
     --font-headline: 'Bebas Neue', sans-serif;
     --font-tagline: 'Playfair Display', serif;
@@ -11,10 +12,11 @@
 }
 
 body {
-    background-color: var(--color-black);
+    /* Apply subtle matte black gradient for BG depth */
+    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark) 100%);
     color: var(--color-light);
     font-family: var(--font-body);
-    overflow-x: hidden; /* Prevent horizontal scroll from transitions */
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .headline-font {
@@ -26,7 +28,8 @@ h1, h2, h3, h4, .headline-font {
     font-family: var(--font-tagline);
 }
 
-.text-gold { color: var(--color-gold) !important; }
+/* Matte Red Accent Class */
+.text-red { color: var(--color-accent) !important; }
 .bg-dark { background-color: var(--color-dark) !important; }
 .bg-darker { background-color: var(--color-darker) !important; }
 .py-6 { padding-top: 8rem; padding-bottom: 8rem; }
@@ -35,20 +38,20 @@ h1, h2, h3, h4, .headline-font {
 
 /* NAV BAR */
 .cinematic-nav {
-    background-color: rgba(0, 0, 0, 0.7); /* Subtle transparency */
+    background-color: rgba(0, 0, 0, 0.85); /* Darker transparency for the matte look */
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(240, 194, 75, 0.1);
+    border-bottom: 1px solid rgba(178, 24, 24, 0.2);
     transition: background-color 0.3s ease;
 }
 .cinematic-nav .navbar-brand { font-size: 1.8rem; letter-spacing: 3px; }
-.cinematic-nav .nav-link:hover { color: var(--color-gold) !important; }
+.cinematic-nav .nav-link:hover { color: var(--color-accent) !important; }
 .cta-nav {
-    border: 1px solid var(--color-gold);
+    border: 1px solid var(--color-accent);
     padding: 5px 15px !important;
     border-radius: 3px;
     transition: all 0.3s ease;
 }
-.cta-nav:hover { background-color: var(--color-gold) !important; color: var(--color-black) !important; }
+.cta-nav:hover { background-color: var(--color-accent) !important; color: var(--color-black) !important; }
 
 
 /* HERO SECTION */
@@ -67,46 +70,46 @@ h1, h2, h3, h4, .headline-font {
     height: auto;
     transform: translate(-50%, -50%);
     z-index: 0;
-    opacity: 0.6;
-    filter: brightness(0.7) grayscale(0.2);
+    opacity: 0.7; /* Slightly higher opacity for a richer black */
+    filter: brightness(0.65) saturate(1.1); /* Enhance mood */
 }
 .hero-content {
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     max-width: 1000px;
 }
 .hero-content h1 { font-size: 5.5rem; line-height: 1.1; }
 .hero-content p { font-weight: 300; }
 
-/* CINEMATIC BUTTONS */
+/* CINEMATIC BUTTONS (Matte Red) */
 .cinematic-btn {
-    background-color: var(--color-gold);
-    border-color: var(--color-gold);
-    color: var(--color-black);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #FFF; /* Use stark white text for contrast on matte red */
     padding: 15px 40px;
     border-radius: 3px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(240, 194, 75, 0.4);
+    box-shadow: 0 0 20px rgba(178, 24, 24, 0.4);
 }
 .cinematic-btn:hover {
-    background-color: #FFD700;
-    border-color: #FFD700;
-    box-shadow: 0 0 30px rgba(240, 194, 75, 0.7);
+    background-color: #D62525; /* Slightly brighter red on hover */
+    border-color: #D62525;
+    box-shadow: 0 0 30px rgba(178, 24, 24, 0.7);
     transform: translateY(-3px);
 }
-.btn-outline-gold {
-    color: var(--color-gold);
-    border: 2px solid var(--color-gold);
+.btn-outline-red {
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
     padding: 12px 30px;
     transition: all 0.3s ease;
 }
-.btn-outline-gold:hover {
-    background-color: var(--color-gold);
-    color: var(--color-black);
+.btn-outline-red:hover {
+    background-color: var(--color-accent);
+    color: #FFF;
 }
 
 /* TAGLINE SECTION */
@@ -129,15 +132,15 @@ h1, h2, h3, h4, .headline-font {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: var(--color-gold);
+    background-color: var(--color-accent);
     margin: 10px auto 0;
-    box-shadow: 0 0 10px rgba(240, 194, 75, 0.5);
+    box-shadow: 0 0 10px rgba(178, 24, 24, 0.5);
 }
 
 /* ABOUT SECTION */
 .about-card {
     background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(240, 194, 75, 0.1);
+    border: 1px solid rgba(178, 24, 24, 0.1);
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -145,7 +148,7 @@ h1, h2, h3, h4, .headline-font {
 .about-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    border-color: rgba(240, 194, 75, 0.3);
+    border-color: rgba(178, 24, 24, 0.3);
 }
 .icon-bullet { font-size: 1.5rem; vertical-align: middle; margin-right: 5px; }
 .cinematic-quote { font-style: italic; font-size: 1.3rem; }
@@ -158,7 +161,7 @@ h1, h2, h3, h4, .headline-font {
     justify-content: center;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -182,15 +185,15 @@ h1, h2, h3, h4, .headline-font {
 /* SERVICES SECTION */
 .service-card {
     background-color: var(--color-darker);
-    border: 1px solid rgba(240, 194, 75, 0.15);
-    border-left: 5px solid var(--color-gold);
+    border: 1px solid rgba(178, 24, 24, 0.15);
+    border-left: 5px solid var(--color-accent);
     border-radius: 5px;
     transition: all 0.3s ease;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .service-card:hover {
-    border-left: 5px solid #FFD700;
-    box-shadow: 0 10px 30px rgba(240, 194, 75, 0.1);
+    border-left: 5px solid #D62525;
+    box-shadow: 0 10px 30px rgba(178, 24, 24, 0.1);
 }
 .primary-service {
     background-color: var(--color-dark);
@@ -211,7 +214,7 @@ h1, h2, h3, h4, .headline-font {
     transition: background-color 0.3s ease;
 }
 .service-mini-card:hover {
-    background-color: rgba(240, 194, 75, 0.1);
+    background-color: rgba(178, 24, 24, 0.1);
 }
 .service-mini-card h4 { font-size: 1.2rem; }
 
@@ -227,24 +230,24 @@ h1, h2, h3, h4, .headline-font {
     height: 60px;
     line-height: 60px;
     border-radius: 50%;
-    border: 3px solid var(--color-gold);
+    border: 3px solid var(--color-accent);
     font-size: 2rem;
     font-weight: bold;
     margin: 0 auto 15px;
-    box-shadow: 0 0 15px rgba(240, 194, 75, 0.4);
+    box-shadow: 0 0 15px rgba(178, 24, 24, 0.4);
 }
 .process-arrow {
     font-size: 3rem;
-    color: var(--color-gold);
+    color: var(--color-accent);
     opacity: 0.5;
-    margin-top: -50px; /* Aligns arrow with icon line */
+    margin-top: -50px;
 }
 
 /* TRUST SECTION */
 .feature-box {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
-    border-top: 3px solid var(--color-gold);
+    border-top: 3px solid var(--color-accent);
     transition: transform 0.3s ease;
 }
 .feature-box:hover {
@@ -254,12 +257,11 @@ h1, h2, h3, h4, .headline-font {
 
 /* CTA SECTION (Uses Cinematic Banner) */
 .cta-section {
-    /* Specific styling for the final CTA banner */
     min-height: 60vh;
     background-position: center top;
 }
 .cta-section::before {
-    background: rgba(0, 0, 0, 0.85); /* Darker overlay for high contrast */
+    background: rgba(0, 0, 0, 0.85);
 }
 .contact-details {
     background-color: rgba(255, 255, 255, 0.05);
@@ -275,7 +277,7 @@ h1, h2, h3, h4, .headline-font {
 }
 
 /* ------------------------------------------------------------------ */
-/* CINEMATIC MOTION CUES (Scroll-Based Animations) */
+/* CINEMATIC MOTION CUES (Scroll-Based Animations) - NO CHANGE */
 /* ------------------------------------------------------------------ */
 
 /* Base state: invisible and slightly offset */
@@ -323,6 +325,6 @@ h1, h2, h3, h4, .headline-font {
     .hero-content p { font-size: 1rem; }
     .section-title { font-size: 2.5rem; }
     .py-6 { padding-top: 5rem; padding-bottom: 5rem; }
-    .process-arrow { display: none !important; } /* Hide arrows on mobile */
+    .process-arrow { display: none !important; }
     .about-card, .service-card { margin-bottom: 20px; }
 }
