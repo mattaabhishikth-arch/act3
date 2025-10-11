@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ACT III — Creative Studio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS (your file) -->
+  <link rel="stylesheet" href="/act3/styles.css">
+  <meta name="description" content="ACT III — Film production & advertising. Studio-quality creative content." />
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">ACT III</a>
+
+      <nav id="site-nav" class="nav-desktop">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#work" class="nav-link">Our Work</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="nav-chat">Chat with us</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO (full-screen cinematic image) -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-left" data-aos="fade-right" data-aos-delay="150">
+        <p class="eyebrow">Welcome to ACT III</p>
+        <h1 class="hero-title"><span>ACT III</span> — Creative Studio</h1>
+        <p class="hero-sub">Film Production &amp; Advertising Agency</p>
+
+        <p class="typed-wrap"><span id="typed"></span></p>
+
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn-primary">Featured Work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+
+        <ul class="hero-features" data-aos="fade-up" data-aos-delay="300">
+          <li>Studio-quality production</li>
+          <li>Creative storytelling</li>
+          <li>Client-focused approach</li>
+        </ul>
+      </div>
+
+      <div class="hero-right" data-aos="zoom-in" data-aos-delay="250">
+        <!-- Use the logo-image (centered) — optional -->
+        <div class="hero-logo">
+          <img src="/Untitled design (1).png" alt="ACT III logo" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Featured Work</h2>
+        <p>Explore our creative portfolio</p>
+      </div>
+
+      <div class="grid cards" data-aos="fade-up" data-aos-delay="120">
+        <article class="work-card">
+          <img src="https://picsum.photos/540/320?random=101" alt="Toilet Terror">
+          <div class="card-body">
+            <h3>Toilet Terror</h3>
+            <p>A micro-story that showcases our ability to create impactful content in a short format.</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="https://picsum.photos/540/320?random=102" alt="Gabbie">
+          <div class="card-body">
+            <h3>GABBIE</h3>
+            <p>A doll, found in the garbage, gets a new home.</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="https://picsum.photos/540/320?random=103" alt="Ghumatacha Modur Talar">
+          <div class="card-body">
+            <h3>Ghumatacha Modur Talar</h3>
+            <p>A documentary exploring Goa's state instrument.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>What we can do for you</p>
+      </div>
+
+      <div class="grid services-grid" data-aos="fade-up" data-aos-delay="120">
+        <div class="service-item">
+          <i class="fa-solid fa-film service-icon"></i>
+          <h4>Film Production</h4>
+          <p>High-quality film production services for commercials, documentaries, and more.</p>
+          <a href="#contact" class="link-more">Learn More →</a>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-bullhorn service-icon"></i>
+          <h4>Advertising</h4>
+          <p>Creative advertising solutions that make your brand stand out.</p>
+          <a href="#contact" class="link-more">Learn More →</a>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-video service-icon"></i>
+          <h4>Video Content</h4>
+          <p>Engaging video content for social media, websites, and marketing campaigns.</p>
+          <a href="#contact" class="link-more">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Latest From Our Blog</h2>
+        <p>Insights, stories & creative inspiration</p>
+      </div>
+
+      <div class="grid blog-grid" data-aos="fade-up" data-aos-delay="120">
+        <article class="blog-card">
+          <small>June 15, 2023 • Film Production</small>
+          <h4>The Art of Storytelling in Commercial Films</h4>
+          <a class="link-more" href="#blog">Read More →</a>
+        </article>
+
+        <article class="blog-card">
+          <small>May 28, 2023 • Social Media</small>
+          <h4>5 Trends Dominating Social Video in 2023</h4>
+          <a class="link-more" href="#blog">Read More →</a>
+        </article>
+
+        <article class="blog-card">
+          <small>April 12, 2023 • Behind the Scenes</small>
+          <h4>Making of Our Award-Winning Short Film</h4>
+          <a class="link-more" href="#blog">Read More →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-dark">
+    <div class="container about-grid" data-aos="fade-up">
+      <div class="about-text">
+        <h3>About ACT III</h3>
+        <p>ACT III is a full-spectrum creative production studio built for the modern age of storytelling. We don’t just make ads—we craft iconic brand narratives that resonate, engage, and drive results.</p>
+
+        <ul class="about-list">
+          <li>Studio-quality production</li>
+          <li>Creative storytelling</li>
+          <li>Professional team</li>
+        </ul>
+      </div>
+
+      <aside class="founder-card" data-aos="fade-left">
+        <img src="https://picsum.photos/360/360?random=5" alt="Founder">
+        <div class="founder-meta">
+          <strong>Abhishikth Matta</strong>
+          <small>Founder &amp; CEO, ACT III</small>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container cta-row" data-aos="fade-up">
+      <div>
+        <h3>Ready to start your project?</h3>
+        <p>Perfect for agencies, production houses, and marketing professionals seeking studio-quality results.</p>
+      </div>
+      <div>
+        <a href="#contact" class="btn btn-primary large">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark contact-section" data-aos="fade-up">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:contact@act3.in">contact@act3.in</a></p>
+        <p>Phone: <a href="tel:+918788133949">+91 87881 33949</a></p>
+
+        <div class="testimonial">
+          <strong>"ACT III delivered beyond our expectations."</strong>
+          <p class="muted">— Om Gorantiwar</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we will get back to you!');">
+        <div class="mb-2">
+          <label class="form-label">Name</label>
+          <input class="form-control" type="text" required placeholder="Your name">
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Email</label>
+          <input class="form-control" type="email" required placeholder="you@company.com">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="4" required placeholder="Brief about the project"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a class="brand footer-brand" href="#">ACT III</a>
+        <p>High-quality productions for creatives, agencies, and visionaries. Studio-quality results, every time.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:contact@act3.in">contact@act3.in</a></p>
+        <p>Phone: <a href="tel:+918788133949">+91 87881 33949</a></p>
+        <div class="socials">
+          <a href="#" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© 2025 ACT III. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- JS: Bootstrap, AOS, Typed, then custom -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
+
+  <script>
+    // Wait until DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      // Mobile nav toggle
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('site-nav');
+      hamburger.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        hamburger.classList.toggle('open');
+      });
+
+      // Close mobile nav on link click
+      document.querySelectorAll('.nav-link').forEach(a=>{
+        a.addEventListener('click', ()=> {
+          nav.classList.remove('open');
+          hamburger.classList.remove('open');
+        });
+      });
+
+      // Smooth scroll for internal links
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        });
+      });
+
+      // Init AOS
+      AOS.init({ duration: 750, easing: 'ease-out-cubic', once: true });
+
+      // Typed.js for subtitle (simple tagline rotation)
+      new Typed('#typed', {
+        strings: ['Cinematic ad films', 'High-impact social campaigns', 'Documentary storytelling'],
+        typeSpeed: 45,
+        backSpeed: 25,
+        backDelay: 1800,
+        loop: true
+      });
+    });
+  </script>
+</body>
+</html>
