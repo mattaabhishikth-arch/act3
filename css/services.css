@@ -1,0 +1,78 @@
+/* SERVICES HERO */
+.services-hero {
+  padding: 8rem 0;
+}
+
+/* FLIP CARD STYLES */
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+  margin-bottom: 2rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border-left: 5px solid var(--color-accent);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-left: 5px solid #D62525;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.flip-hint {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.detail-list li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* SERVICES CTA */
+.services-cta {
+  padding: 8rem 0;
+}

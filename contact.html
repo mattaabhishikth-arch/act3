@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Contact Us - ACT 3 Creative Studio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg fixed-top cinematic-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html">
+        <img src="/asset/logo.png" alt="ACT III logo" class="act3-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link text-white mx-2" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white mx-2" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white mx-2" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white mx-2 active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-red mx-2 cta-nav" href="contact.html">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero py-6 bg-dark text-white text-center">
+    <div class="container">
+      <h1 class="display-3 text-white headline-font mb-4 view-on-scroll fade-in-up">Let's Create Together</h1>
+      <p class="lead text-light view-on-scroll fade-in-up delay-2">Ready to turn your vision into powerful storytelling? Let's talk.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section py-6 bg-darker text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-form view-on-scroll fade-in-up">
+            <h2 class="section-title text-white mb-4 text-center">Get In Touch</h2>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+                </div>
+
+                <!-- Film Advertisement Services Dropdown -->
+                <div class="col-12">
+                  <select name="service" id="service" class="form-control" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Trailer Promotion">Trailer Promotion</option>
+                    <option value="Poster Design & Distribution">Poster Design & Distribution</option>
+                    <option value="Social Media Campaigns">Social Media Campaigns</option>
+                    <option value="YouTube Advertisement">YouTube Advertisement</option>
+                    <option value="TV/OTT Commercial Ads">TV/OTT Commercial Ads</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <textarea name="message" class="form-control" rows="6" placeholder="Tell us about your project..." required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-lg cinematic-btn">Send Message →</button>
+                </div>
+              </div>
+              
+              <!-- Response Message -->
+              <div id="responseMsg" class="mt-3 text-center"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="row mt-6 g-4">
+        <div class="col-md-4 view-on-scroll fade-in-up">
+          <div class="contact-info-card">
+            <div class="text-red mb-3" style="font-size: 2.5rem;">📞</div>
+            <h3 class="headline-font text-white mb-3">Call/WhatsApp</h3>
+            <p class="text-light h5">+91 8788133949</p>
+            <p class="text-light small">Available for calls and messages</p>
+          </div>
+        </div>
+        <div class="col-md-4 view-on-scroll fade-in-up delay-2">
+          <div class="contact-info-card">
+            <div class="text-red mb-3" style="font-size: 2.5rem;">✉️</div>
+            <h3 class="headline-font text-white mb-3">Email Us</h3>
+            <p class="text-light h5">contact@act3.in</p>
+            <p class="text-light small">We respond within 24 hours</p>
+          </div>
+        </div>
+        <div class="col-md-4 view-on-scroll fade-in-up delay-3">
+          <div class="contact-info-card">
+            <div class="text-red mb-3" style="font-size: 2.5rem;">📍</div>
+            <h3 class="headline-font text-white mb-3">Locations</h3>
+            <p class="text-light h5">Goa | Hyderabad</p>
+            <p class="text-light small">Available Nationwide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS OVERVIEW -->
+  <section class="process-overview py-6 bg-dark text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-6 text-white view-on-scroll fade-in-up">Our Simple Process</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4 view-on-scroll fade-in-up">
+          <div class="process-step">
+            <div class="step-icon text-red mx-auto mb-3">1</div>
+            <h4 class="headline-font text-white">Consultation</h4>
+            <p class="text-light">We understand your vision and goals</p>
+          </div>
+        </div>
+        <div class="col-md-4 view-on-scroll fade-in-up delay-2">
+          <div class="process-step">
+            <div class="step-icon text-red mx-auto mb-3">2</div>
+            <h4 class="headline-font text-white">Strategy</h4>
+            <p class="text-light">We develop a customized creative plan</p>
+          </div>
+        </div>
+        <div class="col-md-4 view-on-scroll fade-in-up delay-3">
+          <div class="process-step">
+            <div class="step-icon text-red mx-auto mb-3">3</div>
+            <h4 class="headline-font text-white">Execution</h4>
+            <p class="text-light">We bring your story to life with precision</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-darker text-center py-5 text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center mb-4">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="/asset/logo.png" alt="ACT III logo" class="footer-logo mb-3">
+          <h3 class="text-white headline-font mb-3">ACT 3</h3>
+          <p class="text-light">Where the old breaks away, and something powerful begins.</p>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-red subhead-font mb-3">Quick Links</h4>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <a href="index.html" class="text-light footer-link">Home</a>
+            <a href="about.html" class="text-light footer-link">About</a>
+            <a href="services.html" class="text-light footer-link">Services</a>
+            <a href="contact.html" class="text-light footer-link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary pt-4 mt-4">
+        <p class="mb-2 text-red fw-bold">ACT 3 — Where Stories Take Their Final, Most Powerful Form</p>
+        <p class="text-white small">&copy; 2025 ACT 3 Creative Studio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+  
+  <!-- Contact Form JavaScript -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const submitButton = this.querySelector('button[type="submit"]');
+      const responseMsg = document.getElementById('responseMsg');
+      const form = this;
+      
+      // Change button text to loading
+      const originalText = submitButton.innerHTML;
+      submitButton.innerHTML = 'Sending...';
+      submitButton.disabled = true;
+      
+      // Get form data
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+      
+      // Google Apps Script URL (replace with your actual URL)
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw5G6frnSOrUXK6YGj24pXvoUT76AmpfLMYOh9YRUnqiIBtpyl1LHq43a-q37PoM4euRw/exec';
+      
+      // Create a hidden iframe for form submission (bypasses CORS)
+      const iframe = document.createElement('iframe');
+      iframe.name = 'hidden_iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
+      
+      // Create a form for iframe submission
+      const iframeForm = document.createElement('form');
+      iframeForm.method = 'POST';
+      iframeForm.action = scriptURL;
+      iframeForm.target = 'hidden_iframe';
+      
+      // Add all form data to the iframe form
+      for (const [key, value] of formData.entries()) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        iframeForm.appendChild(input);
+      }
+      
+      document.body.appendChild(iframeForm);
+      
+      // Handle response from iframe
+      iframe.onload = function() {
+        try {
+          // Success - reset form and show success message
+          responseMsg.innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent successfully. We will get back to you soon.</div>';
+          form.reset();
+          
+          // Remove the iframe and form
+          document.body.removeChild(iframe);
+          document.body.removeChild(iframeForm);
+        } catch (error) {
+          responseMsg.innerHTML = '<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again or contact us directly.</div>';
+        } finally {
+          // Reset button text
+          submitButton.innerHTML = originalText;
+          submitButton.disabled = false;
+          
+          // Clear response message after 5 seconds
+          setTimeout(() => {
+            responseMsg.innerHTML = '';
+          }, 5000);
+        }
+      };
+      
+      // Submit the iframe form
+      iframeForm.submit();
+      
+    });
+  </script>
+</body>
+</html>
